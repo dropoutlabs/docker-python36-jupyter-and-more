@@ -1,0 +1,2 @@
+-e git+https://github.com/ansible/ansible.git@2276c5f2060a46d556268b846e6ef30950d992cc#egg=ansible
+-e git+https://github.com/ansible/ansible-container.git@dc74365c07a25c8a2ab172b8da6de9c263c7554f#egg=ansible_container
