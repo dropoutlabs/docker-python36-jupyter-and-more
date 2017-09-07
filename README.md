@@ -1,10 +1,29 @@
-# docker-python36-and-jupyter
+# docker-python36-jupyter-and-more
 
-Insecure ansible container with Python 3.6 and Jupyter
+Insecure ansible container with Python 3.6, Jupyter and more for development:
+
+- TensorFlow
+- TFLearn
+- scikit-learn
+- PyStan
+- matplotlib
+- scipy
+- seaborn
 
 # How to use
 
-See example directory
+Checkout something
+
+    foo $ git clone something
+
+cd, run docker like this
+
+    foo $ cd something
+    something $ docker run -p 8888:8888 -v `pwd`:/work -it dropoutlabs/python36-jupyter-and-more:latest
+
+and go to http://localhost:8888
+
+and HACK!
 
 # How to (re-)build
 
@@ -14,13 +33,13 @@ See example directory
 
         ansible-container ((dc74365...)) $ pip install -e .[docker]
 
-1. ansible-container build --debug
+1. ansible-container --debug build 
 
 # How to publish
 
 2. docker login
 
-3. Should tag it meaningful otherwise will get from docker `Error response from daemon: manifest for dropoutlabs/python36-and-jupyter-notebook:latest not found`
+3. Should tag it meaningful otherwise will get from docker `Error response from daemon: manifest for dropoutlabs/python36-jupyter-and-more:latest not found`
 
         $ ansible-container deploy --push-to docker --tag latest
 

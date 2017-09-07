@@ -1,0 +1,10 @@
+# XXX
+- shell: env -i PATH=$PATH bash -c "pip3.6 install tensorflow tflearn scikit-learn"
+
+# PyStan requires during installation 
+- apt:
+    name: build-essential
+    state: present
+
+- shell: env -i PATH=$PATH bash -c "pip3.6 install pystan matplotlib scipy seaborn"
+
