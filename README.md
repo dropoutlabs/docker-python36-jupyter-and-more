@@ -9,6 +9,7 @@ Insecure ansible container with Python 3.6, Jupyter and more for development:
 - matplotlib
 - scipy
 - seaborn
+- pandas
 
 # How to use
 

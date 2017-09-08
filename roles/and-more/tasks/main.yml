@@ -6,5 +6,5 @@
     name: build-essential
     state: present
 
-- shell: env -i PATH=$PATH bash -c "pip3.6 install pystan matplotlib scipy seaborn"
+- shell: env -i PATH=$PATH bash -c "pip3.6 install pystan matplotlib scipy seaborn pandas"
 
